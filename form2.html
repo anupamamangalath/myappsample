@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ak.com</title>
+
+	<style >
+		input[type=text],[type=password]
+		{
+		
+			  	 width: 100%;
+ 				 padding: 12px 20px;
+ 				 margin: 8px 0;
+ 				 display: inline-block;
+ 				 border: 3px solid #ccc;
+ 				 border-radius: 4px;
+ 				 box-sizing: border-box;
+		}
+		input[type=submit] 
+		{
+		
+ 			width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+		}
+
+		input[type=submit]:hover 
+		{
+  			background-color: #45a049;
+		}
+
+
+
+       
+
+		table 
+		{
+			border-radius: 10px;
+            background-color: #f2f2f2;
+            padding: 50px;
+        }
+	</style>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function fn()
+	{
+		var name,password;
+		name=document.getElementById("nm").value;
+		if(name="")
+		{
+			txt1="name required";
+			document.getElementById("nme").innerHTML = txt1;
+			return false;
+		}
+		password=document.getElementById("pw").value;
+		if(password="")
+		{
+			txt2="password required";
+			document.getElementById("pwe").innerHTML = txt2;
+			return false;
+		}
+
+
+	}
+</script>
+
+<table border="4" bgcolor="pink" align="center">
+<form id="s" ></form>	
+<tbody>
+	<tr>
+		<th align="center" colspan="2">
+			<h1>LOGIN</h1>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<label>NAME</label>
+		</th>
+			<td>
+				<input type="text" name="nm" placeholder="enter your name" id="nm" required>
+				<p id="nme"></p>
+			</td>
+			
+	</tr>
+
+	<tr>
+		<th>
+			<label>PASSWORD</label>
+		</th>
+			<td>
+				<input type="password" name="pw" placeholder="enter your password" id="pw" required>
+				<p id="pwe"></p>
+			</td>
+			
+		
+	</tr>
+	<tr>
+		<th colspan="2" align="center">
+			<input type="submit" name="login" value="LOGIN" onsubmit="fn()">
+		</th>
+	</tr>
+	<tr>
+		<th colspan="2">
+			<label>Doesn't have an account</label>
+			<a href="form1.html" >sign in</a>
+		</th>
+	</tr>
+</table>
+
+</tbody>
+</body>
+</html>
